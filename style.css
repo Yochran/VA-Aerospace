@@ -104,6 +104,29 @@ html {
     width: 35%;
     border-radius: 0.75rem;
     transition: 1s;
-    scale: 155%;
+    scale: 195%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.6);
+    transition: 1s;
+}
+
+.title-box:hover {
+    scale: 205%;
+    transition: 1s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
+}
+
+#title {
+    text-transform: uppercase;
+}
+
+#title, #subtitle {
+    text-decoration: none;
+    scale: 100%;
+    transition: 0.5s;
+}
+
+#title:hover, #subtitle:hover {
+    text-decoration: underline;
+    scale: 110%;
+    transition: 0.5s;
 }
