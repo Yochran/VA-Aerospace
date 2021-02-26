@@ -1,0 +1,109 @@
+html {
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: #050505;
+
+    scroll-behavior: smooth;
+}
+
+#everything {
+    opacity: 0;
+    transition: 1s;
+}
+
+#loading {
+    position: fixed;
+    scale: 200%;
+    color: white;
+    transition: 0.5s;
+    left: 46%;
+    top: 43%;
+}
+
+#background {
+    background: url("https://wallpapershome.com/images/pages/pic_h/16848.jpg");
+    position: fixed;
+    width: 115%;
+    height: 115%;
+    top: -15%;
+    left: -15%;
+    margin: 0;
+    scale: 100%;
+    z-index: -2;
+    filter: blur(0.4rem);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#backsheet {
+    background-color: #151515;
+    position: absolute;
+    width: 115%;
+    height: 115%;
+    top: 100%;
+    left: -15%;
+    margin: 0;
+    z-index: 6;
+}
+
+#separator {
+    background-color: #050505;
+    position: absolute;
+    width: 115%;
+    height: 5%;
+    top: 97.5%;
+    left: -15%;
+    margin: 0;
+    z-index: 7;
+}
+
+#nav-bar {
+    z-index: 10;
+    position: fixed;
+    width: 115%;
+    background-color: #050505;
+    left: -7.15%;
+    top: 0%;
+}
+
+#nav-button {
+    z-index: 10;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.25rem;
+    transition: 1s;
+}
+
+#nav-button:hover {
+    transition: 1s;
+    text-decoration: underline;
+}
+
+@keyframes title-block {
+    0% {top: 38%;}
+    10% {top: 43.5}
+    50% {top: 44%}
+    10% {top: 39.5}
+    100% {top: 38%}
+}
+
+.title-box {
+    animation-name: title-block;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    color: white;
+    left: 33%;
+    top: 38%;
+    position: absolute;
+    z-index: 5;
+    width: 35%;
+    border-radius: 0.75rem;
+    transition: 1s;
+    scale: 155%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.6);
+}
