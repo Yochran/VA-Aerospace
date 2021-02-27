@@ -11,7 +11,8 @@ let loadPage = function() {
 }
 
 function parallax() {
-    document.getElementById("background").style.top = Math.floor(-15 - 0.25 * window.scrollY) + "px";
+    document.getElementById("background").style.top = Math.floor(-15 - 0.175 * window.scrollY) + "px";
+
     document.getElementById("backsheet").style.top = Math.floor(100 + 0.001 * window.scrollY) + "%";
     document.getElementById("separator").style.top = Math.floor(97.5 + 0.0001 * window.scrollY) + "%";
 }
