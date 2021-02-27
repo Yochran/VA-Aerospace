@@ -1,5 +1,7 @@
 // Functions
 let loadPage = function() {
+    scrollTo(document.getElementById("home"));
+
     setTimeout(() => {
         document.getElementById("loading").style.opacity = 0 + "%";
         setTimeout(() => {
