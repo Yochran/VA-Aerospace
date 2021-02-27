@@ -27,8 +27,8 @@ html {
     position: fixed;
     width: 115%;
     height: 115%;
-    top: -15%;
-    left: -15%;
+    top: -15px;
+    left: -15px;
     margin: 0;
     scale: 100%;
     z-index: -2;
