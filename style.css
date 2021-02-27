@@ -48,12 +48,34 @@ html {
     z-index: 6;
 }
 
+#backsheet-2 {
+    background-color: #090909;
+    position: absolute;
+    width: 115%;
+    height: 50%;
+    top: 200%;
+    left: -15%;
+    margin: 0;
+    z-index: 6;
+}
+
 #separator {
     background-color: #050505;
     position: absolute;
     width: 115%;
     height: 5%;
     top: 97.5%;
+    left: -15%;
+    margin: 0;
+    z-index: 7;
+}
+
+#separator-2 {
+    background-color: #050505;
+    position: absolute;
+    width: 115%;
+    height: 5%;
+    top: 197.5%;
     left: -15%;
     margin: 0;
     z-index: 7;
@@ -68,7 +90,7 @@ html {
     top: 0%;
 }
 
-#nav-button {
+#nav-button, #nav-button-2 {
     z-index: 10;
     text-decoration: none;
     text-transform: uppercase;
@@ -79,9 +101,10 @@ html {
     transition: 1s;
 }
 
-#nav-button:hover {
+#nav-button:hover, #nav-button-2:hover {
     transition: 1s;
     text-decoration: underline;
+    cursor:pointer;
 }
 
 @keyframes title-block {
@@ -129,4 +152,45 @@ html {
     text-decoration: underline;
     scale: 110%;
     transition: 0.5s;
+}
+
+.about-box {
+    position: absolute;
+    top: 140%;
+    left: 31%;
+    z-index: 8;
+    width: 40%;
+    scale: 200%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.6);
+    transition: 1s;
+    border-radius: 0.75rem;
+    background-color: #111111;
+    color: white;
+}
+
+.about-box:hover {
+    scale: 210%;
+    transition: 1s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
+}
+
+.bottom-box {
+    position: absolute;
+    text-transform: uppercase;
+    top: 220%;
+    left: 31%;
+    z-index: 8;
+    width: 40%;
+    scale: 165%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.6);
+    transition: 1s;
+    border-radius: 0.75rem;
+    background-color: #111111;
+    color: white;
+}
+
+#yochran:hover {
+    text-decoration: underline;
+    color: rgb(88, 213, 255);
+    cursor: pointer;
 }

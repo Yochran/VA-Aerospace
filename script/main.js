@@ -11,10 +11,14 @@ let loadPage = function() {
 }
 
 function parallax() {
-    document.getElementById("background").style.top = Math.floor(-15 - 0.175 * window.scrollY) + "px";
+    document.getElementById("background").style.top = Math.floor(-15 - 0.05 * window.scrollY) + "px";
 
     document.getElementById("backsheet").style.top = Math.floor(100 + 0.001 * window.scrollY) + "%";
     document.getElementById("separator").style.top = Math.floor(97.5 + 0.0001 * window.scrollY) + "%";
+}
+
+function displayComingSoon() {
+    alert("Coming soon...");
 }
 
 // Events
@@ -27,3 +31,12 @@ document.onreadystatechange = () => {
         loadPage = "";
     })
 };
+
+document.getElementById("nav-button-2").onmousedown = () => {
+    displayComingSoon();
+}
+
+document.getElementById("yochran").onclick = () => {
+    const url = "https://github.com/Yochran";
+    window.open(url, "_blank");
+}
