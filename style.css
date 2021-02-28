@@ -64,7 +64,7 @@ html {
     position: absolute;
     width: 115%;
     height: 5%;
-    top: 97.5%;
+    top: 97%;
     left: -15%;
     margin: 0;
     z-index: 7;
@@ -79,45 +79,70 @@ html {
     left: -15%;
     margin: 0;
     z-index: 7;
+    background-color: #111111;
+}
+
+#opacity-layer {
+    position: absolute;
+    top: 60%;
+    left: -15%;
+    width: 115%;
+    height: 40%;
+    margin: 0;
+    z-index: 6;
+    background-color: #111111;
+    opacity: 200%;
+    background: linear-gradient(transparent, #111111);
 }
 
 #nav-bar {
     z-index: 10;
-    position: fixed;
-    width: 115%;
+    position: absolute;
+    width: 98.5%;
     background-color: #050505;
-    left: -7.15%;
-    top: 0%;
+    left: 0.1%;
+    top: 97%;
+    scale: 100%;
+    transition: 0.25s;
 }
 
-#nav-button, #nav-button-2 {
+#nav-bar-2 {
+    z-index: 10;
+    position: fixed;
+    width: 101%;
+    background-color: #050505;
+    left: -0.85%;
+    top: 0%;
+    opacity: 0%;
+    scale: 100%;
+    transition: 0.25s;
+}
+
+#nav-button, #coming-soon, #coming-soon-2, #coming-soon-3, #coming-soon-4 {
     z-index: 10;
     text-decoration: none;
-    text-transform: uppercase;
     color: white;
     font-weight: 500;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     transition: 1s;
 }
 
-#nav-button:hover, #nav-button-2:hover {
+#nav-button:hover, #coming-soon:hover, #coming-soon-2:hover, #coming-soon-3:hover, #coming-soon-4:hover {
     transition: 1s;
     text-decoration: underline;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 @keyframes title-block {
     0% {top: 38%;}
-    10% {top: 43.5}
-    50% {top: 44%}
-    10% {top: 39.5}
-    100% {top: 38%}
+    50% {top: 44%;}
+    100% {top: 38%;}
 }
 
 .title-box {
     animation-name: title-block;
-    animation-duration: 5s;
+    animation-duration: 7.5s;
     animation-iteration-count: infinite;
     color: white;
     left: 33%;
@@ -182,10 +207,8 @@ html {
     z-index: 8;
     width: 40%;
     scale: 165%;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6), 0 6px 20px 0 rgba(0,0,0,0.6);
     transition: 1s;
     border-radius: 0.75rem;
-    background-color: #111111;
     color: white;
 }
 
